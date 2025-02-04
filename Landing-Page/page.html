@@ -27,10 +27,10 @@
     <!-- above navbar section end -->
 
     <!-- navbar section start -->
-    <div class="container-fluid p-2 px-5">
+    <div class="container-fluid p-2 px-5 navbar-div">
         <nav class="navbar navbar-expand-lg navbar-background-color sticky-top ">
             <div class="container-fluid">
-                <a class="logo" href="#"><img src="../Huawei Images/huawei_logo.webp" alt="Huawei Logo"></a>
+                <a class="logo d-flex align-items-center" href="#"><img src="../Huawei-Images/huawei_logo.webp" alt="Huawei Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -122,7 +122,7 @@
     <!-- carousel section start -->
 
     <div>
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -131,24 +131,31 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" style="position: relative;">
-                    <img src="../Huawei Images/2025-new-year-message-en-1.jpg" class="d-block w-100" alt="...">
+                    <picture>
+                        <source srcset="../Huawei-Images/2025-new-year-message-en-m-1.jpg" media="(max-width: 480px)">
+                        <img src="../Huawei-Images/2025-new-year-message-en-1.jpg" class="d-block w-100 h-auto carousel-image" alt="...">
+                    </picture>
                     <div class="carousel-caption" style="position: absolute; top: 40%; left: 15%;">
                         <button class="carousel-button btn text-light">Learn More</button>
                     </div>
                 </div>
                 <div class="carousel-item" style="position: relative;">
-                    <img src="../Huawei Images/mate-x6-pc.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption" style="position: absolute; top: 50%; left: 21%;">
+                    <picture>
+                        <source srcset="../Huawei-Images/mate-x6-m.jpg" media="(max-width: 480px)">
+                        <img src="../Huawei-Images/mate-x6-pc.jpg" class="d-block w-100 h-auto carousel-image" alt="...">
+                    </picture>
+                    
+                    <div class="carousel-caption carousel-caption-2nd " style="position: absolute; top: 50%; left: 10%;">
                         <button class="carousel-button-2nd btn text-light">Learn More</button>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -160,17 +167,104 @@
 
     <!-- What's New section start -->
 
-    <div class="container">
-        <div class="text-center my-5">
-            <h1>What's New</h1>
-            <div style="background-color: #C7000B; height: 2px; width: 50px; margin: auto;">
+    <div class="text-center my-5">
+        <h1>What's New</h1>
+        <div style="background-color: #C7000B; height: 2px; width: 50px; margin: auto;">
 
-            </div>
         </div>
-        <div class="row py-3">
+    </div>
+
+    <div class="mobile-width-carousel container mt-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="position: relative;">
+                    <img class="h-50 w-100" src="../Huawei-Images/free-buds-pro4-1152.jpg" alt="">
+                    <div class="carousel-caption" style="position: absolute; top: 40%; left: 15%;">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item" style="position: relative;">
+                    <img class="h-50 w-100" src="../Huawei-Images/annual-video-2024-2025-1152.jpg" alt="">
+                    
+                    <div class="carousel-caption carousel-caption-2nd " style="position: absolute; top: 50%; left: 10%;">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item" style="position: relative;">
+                    <img class="h-50 w-100" src="../Huawei-Images/thailand-kbank-1152-3.jpg" alt="">
+                    
+                    <div class="carousel-caption carousel-caption-2nd " style="position: absolute; top: 50%; left: 10%;">
+                        
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="differnt-cards my-3 container">
+        <div class="d-flex gap-2 ">
+            <div class=" card no-borders" style="width: 10rem;">
+                <img class="no-borders" src="../Huawei-Images/finance-digital-core-1152.jpg" class="card-img-top" alt="...">
+                <div class="text-start p-3">
+                  <p style="color: grey; font-size: 12px;">SOLUTION</p>
+                  <p class="fw-bold" >Digital Core Solution</p>
+                  
+                </div>
+              </div>
+              <div class=" card no-borders" style="width: 10rem;">
+                <img class="no-borders" src="../Huawei-Images/jamaica-green-power-m.jpg" class="card-img-top" alt="...">
+                <div class="text-start p-3">
+                  <p style="color: grey; font-size: 12px;">STORY</p>
+                  <p class="fw-bold" >Powering Possibilities: A Greener Transformation in Jamaica</p>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="d-flex gap-2 row-gap-2">
+            <div class=" card no-borders" style="width: 10rem;">
+                <img class="no-borders" src="../Huawei-Images/5g-new-calling-1.jpg" class="card-img-top" alt="...">
+                <div class="text-start p-3">
+                  <p style="color: grey; font-size: 12px;">DECODED</p>
+                  <p class="fw-bold" >Expert Perspectives: How New Calling Is Reinventing Phone Calls</p>
+                  
+                </div>
+              </div>
+              <div class="card no-borders" style="width: 10rem;">
+                <img class="no-borders" src="../Huawei-Images/financial-data-infrastructure-1152.jpg" class="card-img-top" alt="...">
+                <div class="text-start p-3">
+                  <p style="color: grey; font-size: 12px;">TECHTALKS</p>
+                  <p class="fw-bold" >Building Robust Financial Data Centers with All-Flash Storage</p>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        
+        <div class="row py-3 exempt-div">
             <div class="container col-8 image-container">
-                <img class="w-100" src="../Huawei Images/free-buds-pro4-1385.jpg" alt="Free Buds">
-                <div class="overlay-text">
+                <img class="w-100" src="../Huawei-Images/free-buds-pro4-1385.jpg" alt="Free Buds">
+                <div class="overlay-text" style="color: black;">
                     <h5>PRODUCT</h5>
                     <h5>HUAWEI FreeBuds Pro 4</h5>
                     <h6>Catch the Sound</h6>
@@ -178,7 +272,7 @@
                 
             </div>
             <div class="container col-4 image-container">
-                <img class="w-100" src="../Huawei Images/annual-video-2024-2025-825.jpg" alt="Annual Video">
+                <img class="w-100" src="../Huawei-Images/annual-video-2024-2025-825.jpg" alt="Annual Video">
                 <div class="overlay-text" style="left: 10%;">
                     <h5>PRODUCT</h5>
                     <h5>HUAWEI FreeBuds Pro 4</h5>
@@ -186,9 +280,9 @@
                 </div>
             </div>
         </div>
-        <div class="row py-3">
+        <div class="row py-3 exempt-div ">
             <div class="container col-4 image-container">
-                <img class="w-100" src="../Huawei Images/thailand-kbank-825-3.jpg" alt="Free Buds">
+                <img class="w-100" src="../Huawei-Images/thailand-kbank-825-3.jpg" alt="Free Buds">
                 <div class="overlay-text" style="left: 10%;">
                     <h5>PRODUCT</h5>
                     <h5>HUAWEI FreeBuds Pro 4</h5>
@@ -196,7 +290,7 @@
                 </div>
             </div>
             <div class="container col-8 image-container">
-                <img class="w-100" src="../Huawei Images/finance-digital-core-1385.jpg" alt="Annual Video">
+                <img class="w-100" src="../Huawei-Images/finance-digital-core-1385.jpg" alt="Annual Video">
                 <div class="overlay-text">
                     <h5>PRODUCT</h5>
                     <h5>HUAWEI FreeBuds Pro 4</h5>
@@ -204,9 +298,9 @@
                 </div>
             </div>
         </div>
-        <div class="row py-3">
+        <div class="row py-3 exempt-div">
             <div class="container col-4 image-container">
-                <img class="w-100" src="../Huawei Images/jamaica-green-power-pc.jpg" alt="Free Buds">
+                <img class="w-100" src="../Huawei-Images/jamaica-green-power-pc.jpg" alt="Free Buds">
                 <div class="overlay-text" style="top: 68%; left: 10%;">
                     <h5>PRODUCT</h5>
                     <h5>HUAWEI FreeBuds Pro 4</h5>
@@ -214,7 +308,7 @@
                 </div>
             </div>
             <div class="container col-4 image-container">
-                <img class="w-100" src="../Huawei Images/5g-new-calling-1.jpg" alt="Annual Video">
+                <img class="w-100" src="../Huawei-Images/5g-new-calling-1.jpg" alt="Annual Video">
                 <div class="overlay-text" style="top: 68%; left: 10%;">
                     <h5>PRODUCT</h5>
                     <h5>HUAWEI FreeBuds Pro 4</h5>
@@ -222,7 +316,7 @@
                 </div>
             </div>
             <div class="container col-4 image-container">
-                <img class="w-100" src="../Huawei Images/financial-data-infrastructure-1152.jpg" alt="Free Buds">
+                <img class="w-100" src="../Huawei-Images/financial-data-infrastructure-1152.jpg" alt="Free Buds">
                 <div class="overlay-text" style="top: 68%; left: 10%;">
                     <h5>PRODUCT</h5>
                     <h5>HUAWEI FreeBuds Pro 4</h5>
@@ -238,8 +332,11 @@
     <!-- Section 2 start -->
 
     <div style=" position: relative;">
-        <img class="w-100" src="../Huawei Images/birds-yellow-river-pc.jpg" alt="">
-        <button class="carousel-button btn text-light"
+        <picture>
+            <source srcset="../Huawei-Images/birds-yellow-river-m.jpg" media="(max-width: 480px)">
+            <img class="w-100" src="../Huawei-Images/birds-yellow-river-pc.jpg" alt="">
+        </picture>
+        <button class="carousel-button carousel-button-3rd  btn text-light"
             style="position: absolute; top: 50%; left: 260px;">Explore</button>
     </div>
 
@@ -252,10 +349,10 @@
             <h1>News & Events</h1>
             <div style="background-color: #C7000B; height: 2px; width: 50px; margin: auto;"></div>
         </div>
-        <div class="d-flex mt-5 justify-content-between">
+        <div class="d-flex mt-5 justify-content-between flex-wrap card-section-custom">
             <div class="card" style="width: 25rem;">
             <div class="p-2 px-4" style="position: absolute; background-color: rgba(0, 0, 0, .5); color: white; font-size: 12px;">EVENT</div>
-                <img src="../Huawei Images/mwc2025.jpg" class="card-img-top" alt="...">
+                <img src="../Huawei-Images/mwc2025.jpg" class="card-img-top" alt="...">
                 <div class="card-body p-4">
                     <h6 class="card-title">MWC Barcelone 2025</h6>
                     <p class="pe-3" style="display: inline-block;"><i
@@ -269,7 +366,7 @@
             </div>
             <div class="card" style="width: 25rem;">
             <div class="p-2 px-4" style="position: absolute; background-color: rgba(0, 0, 0, .5); color: white; font-size: 12px;">NEWS</div>
-                <img src="../Huawei Images/250117-1.jpg" class="card-img-top" alt="...">
+                <img src="../Huawei-Images/250117-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body p-4">
                     <h6 class="card-title">MWC Barcelone 2025</h6>
                     <p class="pe-3" style="display: inline-block;"><i
@@ -317,8 +414,8 @@
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center pt-5">
-            <div class="me-5"><button class=" px-5 py-2 section-3-btn">More Events</button></div>
+        <div class="d-flex justify-content-center pt-5 gap-2">
+            <div class=""><button class=" px-5 py-2 section-3-btn">More Events</button></div>
 
             <div><button class="px-5 py-2 section-3-btn">More News</button></div>
         </div>
@@ -328,16 +425,16 @@
 
     <!-- Footer Section start -->
     <div class="container-fluid" style="background-color:#F2F2F2">
-        <div class="container pt-5 p">
-            <div class="d-flex w-100 justify-content-between py-3">
-                <a class="text-decoration-none footer-anchor" href="#">Home</a>
-                <form action="">
+        <div class="container pt-5 footer-input-div">
+            <div class="container d-flex w-100 justify-content-between py-3 footer-input-div">
+                <a class="text-decoration-none footer-anchor-home" style="color: grey;" href="#">Home</a>
+                <form class="w-100" action="">
                     <input class="input-field ps-3" type="search" placeholder="Search huawei.com" style="width: 500px; height: 40px;">
                 </form>
 
             </div>
-            <div style="background-color: grey; height: 1px; width: 100%; margin: auto;"></div>
-            <div class="d-flex py-5">
+            <div class="footer-divs" style="background-color: grey; height: 1px; width: 100%; margin: auto;"></div>
+            <div class="d-flex py-5 footer-columns footer-columns-margins">
                 <div class="container d-flex flex-column gap-3">
                     <p class="fw-bold" clas>About Huawei</p>
                     <a class="text-decoration-none footer-anchor" href="#">Sustainability</a>
@@ -348,11 +445,13 @@
                     <a class="text-decoration-none footer-anchor" href="#">Suppliers</a>
                     <a class="text-decoration-none footer-anchor" href="#">See More </a>
                 </div>
+                <div class="footer-div"></div>
                 <div class="container d-flex flex-column gap-3">
                     <p class="fw-bold">News & Events</p>
                     <a class="text-decoration-none footer-anchor" href="#">Media Center</a>
                     <a class="text-decoration-none footer-anchor" href="#">Events</a>
                 </div>
+                <div class="footer-div"></div>
                 <div class="container d-flex flex-column gap-3">
                     <p class="fw-bold">Explore Huawei</p>
                     <a class="text-decoration-none footer-anchor" href="#">HuaweiTech</a>
@@ -361,6 +460,7 @@
                     <a class="text-decoration-none footer-anchor" href="#">Huawei Blog</a>
                     <a class="text-decoration-none footer-anchor" href="#">Publications</a>  
                 </div>
+                <div class="footer-div"></div>
                 <div class="container d-flex flex-column gap-3">
                     <p class="fw-bold">Products</p>
                     <a class="text-decoration-none footer-anchor" href="#">Consumer</a>
@@ -368,6 +468,7 @@
                     <a class="text-decoration-none footer-anchor" href="#">Carriers</a>
                     <a class="text-decoration-none footer-anchor" href="#">Huawei Cloud</a> 
                 </div>
+                <div class="footer-div"></div>
                 <div class="container d-flex flex-column gap-3">
                     <p class="fw-bold">Support</p>
                     <a class="text-decoration-none footer-anchor" href="#">Consumer Support</a>
@@ -377,11 +478,12 @@
                     <a class="text-decoration-none footer-anchor" href="#">Security Incident Response</a>
                       
                 </div>
+                <div class="footer-div"></div>
             </div>
-            <div style="background-color: grey; height: 1px; width: 100%; margin: auto;"></div>
+            <div class="exempt-div" style="background-color: grey; height: 1px; width: 100%; margin: auto;"></div>
 
-            <div class="d-flex w-100 justify-content-between py-3">
-                <a class="text-decoration-none footer-anchor" href="#">Huawei Cloud</a>
+            <div class="d-flex w-100 justify-content-between py-3 social-media-icons">
+                <a class="text-decoration-none" href="#" style="color: grey;">Huawei Cloud</a>
                 <div>
                     <i class="fa-brands fa-linkedin-in fs-3 pe-3 logo-color"></i>
                     <i class="fa-brands fa-square-facebook fs-3 pe-3 logo-color"></i>
@@ -400,13 +502,15 @@
 
     <!-- Footer Footer Section start -->
 
-    <div class="d-flex justify-content-center align-items-center py-3" style="background-color: #E6E6E6;">
-        &#169; <p class="logo-color" style="margin-bottom: 0;"> 2025 Huawei Technologies Co., Ltd.</p>
-        <div class="mx-4" style="height: 20px; width: 1px; background-color: #666666;;"></div>
-        <a class="text-decoration-none logo-color mx-2" href="#">Contact</a>
-        <a class="text-decoration-none logo-color mx-2" href="#">Terms of Use</a>
-        <a class="text-decoration-none logo-color mx-2" href="#">Privacy</a>
-        <a class="text-decoration-none logo-color mx-2" href="#">Cookies</a>
+    <div class="d-flex justify-content-center align-items-center py-3 below-footer" style="background-color: #E6E6E6;">
+        <p class="logo-color" style="margin-bottom: 0;">&#169; 2025 Huawei Technologies Co., Ltd.</p>
+        <div class="mx-4 exempt-div" style="height: 20px; width: 1px; background-color: #666666;;"></div>
+        <div class="d-flex justify-content-center align-items-center">
+            <a class="text-decoration-none logo-color mx-2" href="#">Contact</a>
+            <a class="text-decoration-none logo-color mx-2" href="#">Terms of Use</a>
+            <a class="text-decoration-none logo-color mx-2" href="#">Privacy</a>
+            <a class="text-decoration-none logo-color mx-2" href="#">Cookies</a>
+        </div>
     </div>
 
     <!-- Footer Footer Section end -->
