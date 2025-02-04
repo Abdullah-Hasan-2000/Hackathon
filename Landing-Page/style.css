@@ -1,0 +1,78 @@
+.logo {
+    width: 133px;
+    height: 30px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.above-navbar-section {
+    font-size: 15px;
+}
+
+.carousel-button {
+    margin-bottom: 240px;
+    width: 180px;
+    background-color: #C7000B;
+    border-radius: 0 !important;
+}
+
+.carousel-button:hover {
+    background-color: #800006 !important;
+}
+
+.carousel-button-2nd {
+    margin-bottom: 180px;
+    margin-left: 620px;
+    width: 180px;
+    background-color: #C7000B;
+    border-radius: 0 !important;
+}
+
+.carousel-button-2nd:hover {
+    background-color: #800006 !important;
+}
+
+/* .short-image {
+    height: 50% !important;
+    width: 25% !important;
+}
+
+.images-sizing {
+    width: 100%;
+    height: 100%;
+} */
+
+.section-3-btn {
+    border: 1px solid black;
+    background-color: transparent;
+
+}
+
+.section-3-btn:hover {
+    /* border: 1px solid black; */
+    background-color: #800006 !important;
+    color: white;
+    
+}
+
+.footer-anchor {
+    color: grey;
+}
+
+.hovering-news:hover {
+    color: #800006;
+    cursor: pointer;
+}
+
+.input-field {
+    background: url(magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-position:98% 50% ;
+    background-size: 25px;
+}
+
+.logo-color {
+    color: #666666;
+}
