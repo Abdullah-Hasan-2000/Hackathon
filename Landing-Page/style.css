@@ -76,3 +76,15 @@
 .logo-color {
     color: #666666;
 }
+
+.image-container {
+    position: relative !important;
+}
+
+.overlay-text {
+    position: absolute !important;
+    top: 75%;
+    left: 5%;
+    width: 90%;
+    color: white;
+}
